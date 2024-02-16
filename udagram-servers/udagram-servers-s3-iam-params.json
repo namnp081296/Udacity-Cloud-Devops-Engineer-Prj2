@@ -1,0 +1,10 @@
+[
+   {
+      "ParameterKey":"ProjectName",
+      "ParameterValue":"UdagramInfra"
+   },
+   {
+      "ParameterKey":"S3BucketName",
+      "ParameterValue":"my-984254488819-bucket"
+   }
+]
