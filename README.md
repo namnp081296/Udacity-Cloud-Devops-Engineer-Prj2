@@ -19,7 +19,8 @@ Infrastructure spin up and tear down needs to be automated so that each team can
 
 ## Script
 To create the Stack run this commandline and replace the <> with your parameter:
-`./run_iaac.sh create <your current region> <your stack name> /path/to/yourstack.yml /path/to/parameter.json`
+
+>./run_iaac.sh create <your current region> <your stack name> /path/to/yourstack.yml /path/to/parameter.json
 
 # Udagram Website Link:
 http://udagra-webap-cfjkfbkh2q1w-466389624.us-east-1.elb.amazonaws.com/
