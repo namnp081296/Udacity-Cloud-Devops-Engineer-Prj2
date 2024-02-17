@@ -14,9 +14,9 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref S3BucketName
-      # WebsiteConfiguration:
-      #   IndexDocument: index.html
-      #   ErrorDocument: error.html
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
       OwnershipControls:
@@ -98,9 +98,9 @@ Resources:
           Fn::Base64: !Sub |
             #!/bin/bash
             sudo apt-get update -y
-            sudo apt-get install awscli nginx apache2 -y
-            sudo systemctl start nginx           
-        ImageId: ami-0277155c3f0ab2930
+            sudo apt-get install awscli nginx -y
+            sudo service nginx start
+        ImageId: ami-0c7217cdde317cfec
         SecurityGroupIds:
           - !Ref WebServerSecGroup
         InstanceType: t2.micro
